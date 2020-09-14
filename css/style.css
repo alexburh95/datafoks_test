@@ -7,6 +7,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'DinPro-Bold';
   src: url('../fonts/DINPro-Bold.woff') format('woff'),
@@ -16,6 +17,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'DinPro-Medium';
   src: url('../fonts/DINPro-Medium.woff') format('woff'),
@@ -25,100 +27,106 @@
   font-style: normal;
   font-display: swap;
 }
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-   
-}
 
-ul.row{
-padding: 0px 50px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 
 }
+
+ul.row {
+  padding: 0px 50px;
+
+}
+
 .projects_title {
-    font-size: 46px;
-    font-family: "DINPro";
-    color: rgb(52, 66, 88);
-    text-transform: uppercase;
-    line-height: 2.531;
-    text-align: center;
+  font-size: 46px;
+  font-family: "DINPro";
+  color: rgb(52, 66, 88);
+  text-transform: uppercase;
+  line-height: 2.531;
+  text-align: center;
 
-  }
-  .projects_description{
-    font-size: 18px;
-    font-family: "Myriad Pro";
-    color: rgb(8, 23, 45);
-    line-height: 1.2;
-    text-align: center;
+}
 
-  }
+.projects_description {
+  font-size: 18px;
+  font-family: "Myriad Pro";
+  color: rgb(8, 23, 45);
+  line-height: 1.2;
+  text-align: center;
 
-  .projects img{
-width:100%;
-  }
-  
-  .row .col-lg-4.pad0
-  {
-padding: 0;
-margin: 100px 0px;
+}
 
-  }
-  .caption-link {
-    position: relative;
-    display: block;
-    overflow: hidden;
+.projects img {
+  width: 100%;
+}
 
-  }
-  
-  .caption-link img {
-    display: block;
-    max-width: 100%;
-    transition: transform 0.3s ease;
-    filter: brightness(0.7);
-  }
-  
-  .caption-link:hover img {
-    transform: translateX(100%);
-  }
-  
-  .caption-link::before,
-  .caption-link::after {
-    position: absolute;
-    z-index: -1;
-    box-sizing: border-box;
-    width: 100%;
-    background: #67B26F;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    transform: translateX(-80px);
-  }
-  
-  .caption-link::before {
-    padding: 30px;
-    height: 30%;
-    color: #ffffff;
-    content: attr(data-title);
-    font-size: 40px;
-    font-family: 'DinPro';
-  }
-  
-  .caption-link::after {
-    top: 30%;
-    padding: 0 30px;
-    height: 70%;
-    color: #d7bb97;
-    content: attr(data-description);
-  }
-  
-  .caption-link:hover::before,
-  .caption-link:hover::after {
-    transform: translateX(0);
-  }
- 
+.row .col-lg-4.pad0 {
+  padding: 0;
+  margin: 100px 0px;
+
+}
+
+.caption-link {
+  position: relative;
+  display: block;
+  overflow: hidden;
+
+}
+
+.caption-link img {
+  display: block;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+  filter: brightness(0.7);
+}
+
+.caption-link:hover img {
+  transform: translateX(100%);
+}
+
+.caption-link::before,
+.caption-link::after {
+  position: absolute;
+  z-index: -1;
+  box-sizing: border-box;
+  width: 100%;
+  background: #67B26F;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca2cd, #67B26F);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-80px);
+}
+
+.caption-link::before {
+  padding: 30px;
+  height: 30%;
+  color: #ffffff;
+  content: attr(data-title);
+  font-size: 40px;
+  font-family: 'DinPro';
+}
+
+.caption-link::after {
+  top: 30%;
+  padding: 0 30px;
+  height: 70%;
+  color: #d7bb97;
+  content: attr(data-description);
+}
+
+.caption-link:hover::before,
+.caption-link:hover::after {
+  transform: translateX(0);
+}
+
 .h3_projects {
   font-size: 24px;
   font-family: "DINPro-Bold";
@@ -130,11 +138,13 @@ margin: 100px 0px;
   position: absolute;
   z-index: 1;
   top: 80%;
-width: 100%;
+  width: 100%;
 }
-.relative{
+
+.relative {
   position: relative;
 }
+
 .overlay {
   position: fixed;
   top: 0;
@@ -147,6 +157,7 @@ width: 100%;
   opacity: 0;
   overflow-y: auto;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1;
@@ -168,8 +179,9 @@ width: 100%;
   margin-top: 0;
   color: #333;
   font-family: 'DinPro';
-  text-align:center;
+  text-align: center;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -180,76 +192,82 @@ width: 100%;
   text-decoration: none;
   color: #333;
 }
+
 .popup .close:hover {
   color: #06D85F;
 }
+
 .popup .content {
   max-height: 30%;
   overflow: auto;
 }
+
 .btn_project {
   border-width: 3px;
   border-color: rgb(0, 38, 76);
   border-style: solid;
-padding: 10px 100px;
+  padding: 10px 100px;
   font-size: 18px;
   font-family: "DINPro-Bold";
   color: rgb(52, 66, 88);
   text-transform: uppercase;
   line-height: 6.447;
   margin: 0 auto;
-  
+
 
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
 
-.btn_obertka{
-  margin:0;
-  padding:0;
+.btn_obertka {
+  margin: 0;
+  padding: 0;
   text-align: center;
   padding-bottom: 50px;
 
 }
 
-footer{
+footer {
   background-color: #0d1b2b;
 }
-.footer_title{
-  
-    font-size: 45px;
-    font-family: "DINPro-Bold";
-    color: rgb(255, 255, 255);
-   
-    text-transform: uppercase;
-    line-height: 1.2;
-     padding: 50px 0;
-  
-  
+
+.footer_title {
+
+  font-size: 45px;
+  font-family: "DINPro-Bold";
+  color: rgb(255, 255, 255);
+
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 50px 0;
+
+
 }
-.footer__description{
 
-    font-size: 18px;
-    font-family: "Myriad Pro";
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    text-align: left;
+.footer__description {
 
-  }
-  .pad50{
-    padding:50px 0;
-  }
-  
-footer span{
+  font-size: 18px;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
+
+}
+
+.pad50 {
+  padding: 50px 0;
+}
+
+footer span {
 
   font-size: 30px;
-    font-family: "Myriad Pro";
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    text-align: left;
+  font-family: "Myriad Pro";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: left;
 }
 
 .footer_email {
@@ -261,21 +279,25 @@ footer span{
   padding-left: 20px;
 
 }
-.footer_email::before{
-  content:"";
-  width:1px;
+
+.footer_email::before {
+  content: "";
+  width: 1px;
   color: rgb(61, 149, 227);
 }
-footer .row{
+
+footer .row {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.zaslonka
-{
-  border-left: 2px solid  #0058a7;
+
+.zaslonka {
+  border-left: 2px solid #0058a7;
 }
-footer input, footer textarea{
+
+footer input,
+footer textarea {
   padding: 15px;
   width: 100%;
   background-color: #243448;
@@ -284,197 +306,227 @@ footer input, footer textarea{
   margin: 0 auto;
   margin-top: 2px;
 }
-footer form{
+
+footer form {
   border: 5px solid #243448;
   /* margin: 50px; */
   margin: 50px 0;
   padding: 10px 30px;
 }
+
 input[type="text"]::-webkit-input-placeholder {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.839);
   font-family: 'DinPro-Medium';
   padding-left: 15px;
   font-weight: normal;
- } 
- input[type="text"]::-moz-placeholder {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.839);
-  font-family: 'DinPro-Medium';
-  padding-left: 15px;
-  font-weight: normal;
- }
- input[type="submit"]{
-    font-size: 18px;
-    font-family: "DINPro-Bold";
-    color: rgb(255, 255, 255);
-    text-align: center;
-    border-width: 3px;
-    border-color: rgb(255, 255, 255);
-    border-style: solid;
-    padding: 10px;
-    background: none; 
-    text-transform: uppercase;
-    width: 60%;
-  }
-
-fieldset{
-  display:flex;
-  justify-content:center;
 }
-  
-  
 
-  
- input[type="tel"]::-webkit-input-placeholder {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.839);
-  font-family: 'DinPro-Medium';
-  padding-left: 15px;
-  font-weight: normal;
- } 
- input[type="tel"]::-moz-placeholder {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.839);
-  font-family: 'DinPro-Medium';
-  padding-left: 15px;
-  font-weight: normal;
- }
- input[type="email"]::-webkit-input-placeholder {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.839);
-  font-family: 'DinPro-Medium';
-  padding-left: 15px;
-  font-weight: normal;
- } 
- input[type="email"]::-moz-placeholder {
-  font-size: 15px;
-  color: rgba(255, 255, 255, 0.839);
-  font-family: 'DinPro-Medium';
-  padding-left: 15px;
-  font-weight: normal;
- }
-textarea::webkit-input-placeholder{
+input[type="text"]::-moz-placeholder {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.839);
   font-family: 'DinPro-Medium';
   padding-left: 15px;
   font-weight: normal;
 }
+
+input[type="submit"] {
+  font-size: 18px;
+  font-family: "DINPro-Bold";
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  padding: 10px;
+  background: none;
+  text-transform: uppercase;
+  width: 60%;
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+input[type="tel"]::-webkit-input-placeholder {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.839);
+  font-family: 'DinPro-Medium';
+  padding-left: 15px;
+  font-weight: normal;
+}
+
+input[type="tel"]::-moz-placeholder {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.839);
+  font-family: 'DinPro-Medium';
+  padding-left: 15px;
+  font-weight: normal;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.839);
+  font-family: 'DinPro-Medium';
+  padding-left: 15px;
+  font-weight: normal;
+}
+
+input[type="email"]::-moz-placeholder {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.839);
+  font-family: 'DinPro-Medium';
+  padding-left: 15px;
+  font-weight: normal;
+}
+
+textarea::webkit-input-placeholder {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.839);
+  font-family: 'DinPro-Medium';
+  padding-left: 15px;
+  font-weight: normal;
+}
+
 textarea::-moz-placeholder {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.839);
   font-family: 'DinPro-Medium';
   padding-left: 15px;
   font-weight: normal;
- }
+}
 
- textarea:-moz-placeholder {   font-size: 15px;
-  color: rgba(255, 255, 255, 0.839);
-  font-family: 'DinPro-Medium';
-  padding-left: 15px;
-  font-weight: normal;
-} 
-
-
-
-textarea::-webkit-input-placeholder {   font-size: 15px;
+textarea:-moz-placeholder {
+  font-size: 15px;
   color: rgba(255, 255, 255, 0.839);
   font-family: 'DinPro-Medium';
   padding-left: 15px;
   font-weight: normal;
 }
+
+
+
+textarea::-webkit-input-placeholder {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.839);
+  font-family: 'DinPro-Medium';
+  padding-left: 15px;
+  font-weight: normal;
+}
+
 form p {
   font-size: 14px;
-  font-family:'DinPro-Medium';
+  font-family: 'DinPro-Medium';
   color: rgb(76, 137, 193);
   text-decoration: underline;
   line-height: 1.2;
   text-align: center;
-  
+
 }
-footer br{
+
+footer br {
   display: none;
 }
+
 /*-------Adaptiv */
-@media screen and (max-width: 1200px){
-  .h3_projects{
+@media screen and (max-width: 1200px) {
+  .h3_projects {
     top: 70%;
-    font-size: 20px;}
-    .footer_email {
-      font-size: 12px;
-    }
-    footer span {
-      font-size: 24px;
-    }
+    font-size: 20px;
   }
 
-@media screen and (max-width: 992px){
+  .footer_email {
+    font-size: 12px;
+  }
+
+  footer span {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
   footer span {
     font-size: 18px;
   }
 
-input[type="submit"] {
-
-  width: 100%;
-}
-
-}
-@media screen and (max-width: 768px){
-  .pad50{
-    padding: 30px 0;
-  }
   input[type="submit"] {
 
-  font-size: 14px;
+    width: 100%;
   }
+
+}
+
+@media screen and (max-width: 768px) {
+  .pad50 {
+    padding: 30px 0;
+  }
+
+  input[type="submit"] {
+
+    font-size: 14px;
+  }
+
   footer span {
     font-size: 27px;
   }
+
   .footer_email {
     font-size: 16px;
 
   }
+
   .zaslonka {
     padding-top: 20px;
   }
-  .box{
+
+  .box {
     width: 70%;
   }
-  .popup{
+
+  .popup {
     width: 70%;
   }
+
   .projects_title {
-    
+
     line-height: 1.531;
+  }
 }
-}
-@media screen and (max-width: 576px){
-  .row .col-lg-4.pad0{
+
+@media screen and (max-width: 576px) {
+  .row .col-lg-4.pad0 {
     margin: 0;
   }
 
-  footer br{
+  footer br {
     display: block;
   }
-  footer *, .footer__description, .footer_email{
+
+  footer *,
+  .footer__description,
+  .footer_email {
     text-align: center;
   }
 }
 
-@media screen and (max-width: 414px){
-.projects_title {
-  font-size: 30px;
-}
-}
-@media screen and (max-width: 320px){
-.btn_project {
-
-  padding: 10px 50px;
-
+@media screen and (max-width: 414px) {
+  .projects_title {
+    font-size: 30px;
+  }
 }
 
-.h3_projects {
-  font-size: 15px;
-}
+@media screen and (max-width: 320px) {
+  .btn_project {
+
+    padding: 10px 50px;
+
+  }
+
+  .h3_projects {
+    font-size: 15px;
+  }
 }
